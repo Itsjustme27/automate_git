@@ -4,7 +4,7 @@ import os
 
 # Your GitHub personal access token
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
-GITHUB_USERNAME = 'Itsjustme27'
+GITHUB_USERNAME = input('Enter your username: ')
 
 # Function to create a GitHub Repo
 def create_github_repo(repo_name, description='', private=True):
