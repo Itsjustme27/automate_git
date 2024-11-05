@@ -34,7 +34,7 @@ repo_url = create_github_repo(repo_name, description)
 
 if repo_url:
     # Define the local path
-    clone_path = os.path.join(os.path.expanduser('~'), 'Documents', repo_name)
+    clone_path = os.path.join(os.path.expanduser('~'), 'Documents', 'github',  repo_name)
     # Clone the repo locally
     os.system(f'git clone {repo_url} {clone_path}')
     print(f'Cloned {repo_name} into {clone_path}')
